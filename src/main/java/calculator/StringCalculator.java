@@ -34,10 +34,9 @@ class StringCalculator {
 					}
 
 				}
-
-				return sum;
+				
+				return checkSumLimit(sum);
 			}
-
 		}
 	}
 
@@ -48,5 +47,10 @@ class StringCalculator {
 	public boolean checkNegative(int n) {
 		return n > 0 ? false : true;
 	}
+	
+	public int checkSumLimit(int sum) {
+		return sum>1000?(sum%1000):sum;
+	}
+	
 
 }
