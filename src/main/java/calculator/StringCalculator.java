@@ -9,6 +9,11 @@ class StringCalculator {
     	
     	else {
     		
+    		if(input.length()==1) {
+    			
+    			return Integer.valueOf(input);
+    		}
+    		
     		return 1;
     	}
     }
