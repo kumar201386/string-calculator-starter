@@ -9,12 +9,15 @@ class StringCalculator {
     	
     	else {
     		
-    		if(input.length()==1) {
+    		String str[] = input.split(",");
+    		int sum=0;
+    		for(String s:str) {
     			
-    			return Integer.valueOf(input);
+    			sum+=Integer.valueOf(s);
+    			
     		}
     		
-    		return 1;
+    		return sum;
     	}
     }
 
