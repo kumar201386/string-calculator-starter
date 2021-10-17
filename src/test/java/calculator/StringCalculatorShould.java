@@ -31,4 +31,11 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
     	assertEquals(6, stringCalculator.add("1,2;3"));
     }
+    
+    @Test
+    void string_with_three_number_should_return_sum_1() {
+    	
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(10, stringCalculator.add("1,2;3\n\n4"));
+    }
 }
