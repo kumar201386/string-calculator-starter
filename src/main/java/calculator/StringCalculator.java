@@ -1,6 +1,8 @@
 package calculator;
 
 class StringCalculator {
+	
+	String DEFAULT_DELIMETER=";";
 
     public int add(String input) {
     	
@@ -8,8 +10,8 @@ class StringCalculator {
         return 0;
     	
     	else {
-    		
-    		String str[] = input.split(",");
+    		// [^\\d-]
+    		String str[] = input.split("[,|;]");
     		int sum=0;
     		for(String s:str) {
     			
